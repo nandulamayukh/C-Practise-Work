@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+float a,b,c,d,r1,r2,real,img;
+printf("Please enter values for a,b and c, such that the quadratic equation follows ax^2+bx+c=0");
+getch();
+printf("\na=");
+scanf("%f",&a);
+printf("\nb=");
+scanf("%f",&b);
+printf("\nc=");
+scanf("%f",&c);
+d=(pow(b,2)-4*a*c);
+if(d>=0)
+{
+r1=(-b+sqrt(d))/2*a;
+r2=(-b-sqrt(d))/2*a;
+printf("\nRoot1=%f\nRoot2=%f",r1,r2);
+}
+else
+{
+real=-b/a;
+img=sqrt(-d)/a;
+printf("\nRoot1=%f+i*%f",real,img);
+printf("\nRoot2=%f-i*%f",real,img);
+}
+getch();
+}

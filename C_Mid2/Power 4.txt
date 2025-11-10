@@ -1,0 +1,11 @@
+#include<math.h>
+#include<stdio.h>
+main()
+{
+int a;
+printf("Enter number\n");
+scanf("%d",&a);
+pow(a,4);
+printf("%d to the power 4 is %d",a,pow(a,4));
+getch();
+}
