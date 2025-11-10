@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+#include <math.h>
+main()
+{
+char a;
+int char_no;
+printf("\nType in a character\t");
+scanf("%c",&a);
+char_no=a;
+if((char_no>=65 && char_no<=90)||(char_no>=97 && char_no<=122))
+    {
+        printf("Character is an alphabet");
+    }
+else
+    {
+        printf("Character is not an alphabet");
+
+    }
+getch();
+}
+
